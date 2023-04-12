@@ -1,0 +1,45 @@
+#{extends 'main.html' /}
+#{set title:'Station' /}
+
+#{menu id:"dashboard"/}
+
+<div class="content box">
+  <h1 class="title">
+    ${station.name}
+  </h1>
+  #{readings station:station /}
+</div>
+
+<!--<div class="content box">-->
+<!--  <h1 class="title">-->
+<!--    ${station.name}-->
+<!--  </h1>-->
+<!--  <table class="table">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--      <th>Code</th>-->
+<!--      <th>Temperature</th>-->
+<!--      <th>WindSpeed</th>-->
+<!--      <th>Pressure</th>-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    #{list items:station.readings, as:'reading'}-->
+<!--    <tr>-->
+<!--      <td>-->
+<!--        ${reading.code}-->
+<!--      </td>-->
+<!--      <td>-->
+<!--        ${reading.temperature}-->
+<!--      </td>-->
+<!--      <td>-->
+<!--        ${reading.windSpeed}-->
+<!--      </td>-->
+<!--      <td>-->
+<!--        ${reading.pressure}-->
+<!--      </td>-->
+<!--    </tr>-->
+<!--    #{/list}-->
+<!--    </tbody>-->
+<!--  </table>-->
+<!--</div>-->
