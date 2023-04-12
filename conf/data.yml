@@ -37,7 +37,7 @@ Station(s1):
     - r3
 
 Station(s2):
-  title: Derry
+  name: Derry
   readings:
     - r4
     - r5
