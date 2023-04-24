@@ -22,6 +22,9 @@
     <td>
       ${reading.pressure}
     </td>
+    <td>
+      <a href="/station/${_station.id}/deleteReading/${reading.id}" class="button is-danger">Delete Reading</a>
+    </td>
   </tr>
   #{/list}
   </tbody>
